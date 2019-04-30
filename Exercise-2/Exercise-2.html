@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="asset/css/Exercise-2.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <script type="text/javascript" src="asset/js/Exercise-2.js"> </script>
+    
+    <title>Exercise-2 | DevC Javascript Course</title>
+
+</head>
+<body class="backg">
+    <h3>Kalkulator Sederhana</h3>
+    <div class="container kotak">
+        <input class="input1" type="text" id="data1">
+        <table>
+            <tr>
+                <td>
+                    <input class="button" type="button" value="C" onclick="reset()">
+                </td>
+                <td>
+                    <input class="button" type="button" value="." onclick="getInput('.')">
+                </td>
+                <td>
+                    <input class="button" type="button" value="/" onclick="getInput('/')">
+                </td>
+                <td>
+                    <input class="button" type="button" value="x" onclick="getInput('*')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="button" type="button" value="7" onclick="getInput(7)">
+                </td>
+                <td>
+                    <input class="button" type="button" value="8" onclick="getInput(8)">
+                </td>
+                <td>
+                    <input class="button" type="button" value="9" onclick="getInput(9)">
+                </td>
+                <td>
+                    <input class="button" type="button" value="-" onclick="getInput('-')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="button" type="button" value="4" onclick="getInput(4)">
+                </td>
+                <td>
+                    <input class="button" type="button" value="5" onclick="getInput(5)">
+                </td>
+                <td>
+                    <input class="button" type="button" value="6" onclick="getInput(6)">
+                </td>
+                <td>
+                    <input class="button" type="button" value="+" onclick="getInput('+')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="button" type="button" value="1" onclick="getInput(1)">
+                </td>
+                <td>
+                    <input class="button" type="button" value="2" onclick="getInput(2)">
+                </td>
+                <td>
+                    <input class="button" type="button" value="3" onclick="getInput(3)">
+                </td>
+                <td rowspan="5">
+                    <input class="button h" type="submit" value="=" onclick="validasi()">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input class="button w" type="button" value="DEL" onclick="del()">
+                </td>
+                <td>
+                    <input class="button" type="button" value="0" onclick="getInput(0)">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
